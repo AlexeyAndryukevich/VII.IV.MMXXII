@@ -8,7 +8,7 @@ function render() {
     const now = new Date().getTime();
     const distance = countDownDate - now;
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const weeks = days / 7;
+    const weeks = Math.floor(days / 7);
     const daysLeft = days % 7;
 
     // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
